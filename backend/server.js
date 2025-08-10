@@ -40,4 +40,3 @@ app.listen(port, () => {
   connectToMongoDB();
   console.log(`Server running at http://localhost:${port}`);
 });
-fir 
