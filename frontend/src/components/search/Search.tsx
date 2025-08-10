@@ -80,7 +80,7 @@ export function SymbolCombobox() {
                   <CommandItem
                     key={item.latex}
                     value={item.name}
-                    onSelect={(currentValue) => {
+                    onSelect={() => {
                       setValue(`${item.symbol} (${item.latex})`)
                       setOpen(false)
                     }}

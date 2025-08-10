@@ -1,4 +1,4 @@
-import React, { useEffect, useState, type JSX } from "react";
+import  { useEffect, useState, type JSX } from "react";
 import axios from "axios";
 import { BlockMath } from "react-katex";
 import 'katex/dist/katex.min.css';

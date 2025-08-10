@@ -6,7 +6,8 @@ import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(),,
+  plugins: [
+    react(),
     VitePWA({
       registerType: "autoUpdate",
       manifest: {
@@ -29,13 +30,17 @@ export default defineConfig({
           },
         ],
       },
-    }), tailwindcss()],
+    }),
+    tailwindcss(),
+  ],
+
   server: {
     port: 3000,
     proxy: {
       "/note": "http://localhost:8000",
     },
-  },resolve: {
+  },
+  resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
